@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: hello-blue-whale
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: hello-whale-app
