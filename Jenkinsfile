@@ -14,7 +14,6 @@ pipeline {
             steps {
                 script {
                     myapp = docker.build("intdoc89/hellowhale:${env.BUILD_ID}")
-                    sudo chmod 777 /var/run/docker.sock
                 }
             }
         }
